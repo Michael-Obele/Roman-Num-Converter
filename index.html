@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./belmaNavBar.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./Styles/bulma.css" />
+    <link rel="stylesheet" href="/Styles/styles.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./calc.png" />
+    <title>Roman Numeral Converter</title>
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img
+            src="https://github.com/Michael-Obele/Tribute-page/blob/master/Images/Tech-lover.png?raw=true"
+            style="height: 49px; width: 70px"
+          />
+        </a>
+        <a
+          role="button"
+          id="burger"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item"> Home </a>
+          <a class="navbar-item"> Documentation </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End O f Nav Bar -->
+    <div class="centered">
+      <div class="box">
+        <h1 class="title">Enter Roman Numerial or Number:</h1>
+        <input
+          id="rnum"
+          class="has-fixed-size input is-small"
+          type="text"
+          placeholder="Type Here"
+        />
+        <br /><br />
+        <button
+          id="myBtn"
+          class="button is-primary is-outlined"
+          onclick="rnum()"
+        >
+          Convert
+        </button>
+        <h3>Answer:</h3>
+        <h2 class="" id="demo"></h2>
+      </div>
+    </div>
+
+    <script>
+      var input = document.getElementById('rnum');
+      input.addEventListener('keyup', function (event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById('myBtn').click();
+        }
+      });
+    </script>
+  </body>
+</html>

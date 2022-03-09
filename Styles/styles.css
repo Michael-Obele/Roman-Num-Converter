@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #b9b136;
+  opacity: 0.8;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #b9b136 20%,
+      #b9b136 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #b9b136 20%,
+        #b9b136 80%,
+        transparent 80%,
+        transparent
+      )
+      37.5px 37.5px,
+    linear-gradient(#1c1b1b 3px, transparent 3px) 0 -1.5px,
+    linear-gradient(90deg, #1c1b1b 3px, #b9b136 3px) -1.5px 0;
+  background-size: 75px 75px, 75px 75px, 37.5px 37.5px, 37.5px 37.5px;
+}
+.has-fixed-size {
+  width: fit-content;
+}
+.centered {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.input {
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+}
+button {
+  margin: 20px;
+}
+.box {
+  margin: 20px 20vw 20px;
+}
